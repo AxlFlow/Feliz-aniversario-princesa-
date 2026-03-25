@@ -7,6 +7,7 @@ align-items:center;
 font-family:serif;
 overflow:hidden;
 margin:0;
+padding:20px; /* evita sair da tela no celular */
 }
 
 /* Partículas */
@@ -30,8 +31,9 @@ z-index:2;
 
 .envelope{
 position:relative;
-width:420px;
-height:260px;
+width:90vw;        /* responsivo */
+max-width:420px;   /* limite no PC */
+height:220px;
 background:#e6e6e6;
 border-radius:8px;
 box-shadow:0 0 25px rgba(0,255,200,0.35);
@@ -59,7 +61,8 @@ position:absolute;
 bottom:0;
 left:50%;
 transform:translateX(-50%);
-width:420px;
+width:85vw;       /* responsivo */
+max-width:420px;  /* limite no PC */
 height:0px;
 background:white;
 border-radius:6px;
@@ -98,8 +101,8 @@ z-index:-1;
 /* Carta sai */
 
 .envelope.aberto .papel{
-height:470px;
-bottom:40px;
+height:70vh; /* responsivo para celular */
+bottom:30px;
 }
 
 /* Texto */
@@ -108,6 +111,7 @@ bottom:40px;
 opacity:0;
 transition:1s;
 margin:0;
+white-space:pre-line; /* respeita quebra de linha */
 }
 
 .envelope.aberto .papel p{
@@ -128,4 +132,3 @@ animation:pulse 2s infinite;
 50%{opacity:1;}
 100%{opacity:0.4;}
 }
-
