@@ -89,7 +89,7 @@ left:50%;
 transform:translateX(-50%);
 width:85vw;
 max-width:420px;
-height:0px;
+max-height:0;
 background:white;
 border-radius:6px;
 padding:30px;
@@ -97,16 +97,16 @@ box-shadow:0 10px 25px rgba(0,0,0,0.3);
 overflow:hidden;
 transition:1.5s ease;
 z-index:2;
-line-height:32px;
-font-size:18px;
+line-height:28px;
+font-size:17px;
 
 background-image:
 linear-gradient(
-transparent 31px,
-#e6e6e6 32px
+transparent 27px,
+#e6e6e6 28px
 );
 
-background-size:100% 32px;
+background-size:100% 28px;
 }
 
 /* Envelope abre */
@@ -124,8 +124,10 @@ z-index:-1;
 /* Carta sai */
 
 .envelope.aberto .papel{
-height:min(70dvh,520px);
-bottom:20px;
+max-height:75vh;
+height:auto;
+bottom:10px;
+overflow-y:auto;
 }
 
 /* Texto */
