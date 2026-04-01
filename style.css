@@ -123,10 +123,12 @@ z-index:-1;
 
 /* Carta sai */
 
-.envelope.aberto .papel{ 
+.envelope.aberto .papel{
 max-height:75vh;
 height:auto;
-bottom:10px;
+top:50%;
+bottom:auto;
+transform:translate(-50%, -50%);
 overflow-y:auto;
 }
 
