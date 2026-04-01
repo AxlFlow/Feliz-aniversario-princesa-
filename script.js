@@ -1,4 +1,4 @@
-const texto = `Feliz aniversario de namoro meu amor.
+const texto = `Feliz aniversario de namoro meu amor!
 
 Desde que você entrou na minha vida,
 tudo ficou mais bonito.
@@ -21,7 +21,9 @@ capitulos da nossa vida juntos.
 Que esse seja apenas mais
 um dentre muitos aniversários.
 
-Eu te amo muito minha princesa 💚
+Sempre estarei do seu lado em todos os momentos, 
+você sempre sera minha princesinha e o amor da minha vida.
+Eu te amo muito!💚
 `;
 
 let i = 0;
